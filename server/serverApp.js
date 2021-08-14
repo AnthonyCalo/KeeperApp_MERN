@@ -11,7 +11,6 @@ app.use(express.urlencoded({
     extended: true
   }));
 app.set('view engine', 'ejs');
-app.use(express.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'build', 'index.html')));
 
